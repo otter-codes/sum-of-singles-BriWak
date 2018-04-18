@@ -20,6 +20,10 @@ class SumSinglesSpec extends WordSpec with MustMatchers {
       SumSingles(List(1,1,2,3,3)) mustEqual 2
     }
 
+    "return 2 when given a list of 1,1,1,2,3,3,3" in {
+      SumSingles(List(1,1,1,2,3,3,3)) mustEqual 2
+    }
+
     "return 15 when given a list of 4,5,7,5,4,8" in {
       SumSingles(List(4,5,7,5,4,8)) mustEqual 15
     }
